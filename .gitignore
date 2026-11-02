@@ -1,0 +1,9 @@
+# local only
+deploy.bat
+run.bat
+run.sh
+create.bat
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

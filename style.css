@@ -1,0 +1,11 @@
+/* @kiavashmax */
+:root{--bg:#0a0f14;--fg:#eaf2ff;--muted:rgba(234,242,255,.42)}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--fg);font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+#garden{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:crosshair}
+.hud{position:fixed;top:max(22px,env(safe-area-inset-top));left:max(22px,env(safe-area-inset-left));z-index:2;pointer-events:none;user-select:none}
+.hud-title{margin:0;font-size:13px;font-weight:600;letter-spacing:.42em;text-transform:uppercase}
+.hud-hint{margin:8px 0 0;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.panel{position:fixed;bottom:max(20px,env(safe-area-inset-bottom));right:max(20px,env(safe-area-inset-right));z-index:2;display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);user-select:none}
+.panel button{background:transparent;border:1px solid rgba(234,242,255,.18);color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;padding:6px 12px;border-radius:999px;cursor:pointer;transition:border-color .15s ease,color .15s ease}
+.panel button:hover{border-color:rgba(234,242,255,.42);color:rgba(234,242,255,.9)}
